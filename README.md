@@ -91,9 +91,9 @@ And again, this api has been battle tested copying hundreds of terrabytes of dat
 
 You may begin to see a pattern of my penchant for fluent interfaces. This is a small library of extension methods that add fluent capabilities to common .NET types, such as `string`, `DateTime`, `IEnumerable<T>`, and `Stream`. Nothing fancy, just some syntactic sugar to make code more readable and expressive. In fact, it was written before `String.IsNullOrWhiteSpace` existed, but even after it was added I still prefer
 ```csharp
-    if (myString.IsNullOrEmpty()){ ... }
+    if (myString.IsNullOrEmptyString()){ ... }
     // over
-    if (String.IsNullOrEmpty(myString)){ ... }
+    if (String.IsNullOrWhiteSpace(myString)){ ... }
     // or the readability of this contrived example:
     myString.EmptyIfNullElseTrimmed()
             .ConvertFromBase64Text()
