@@ -130,7 +130,13 @@ For production, I now use distributed docker containers which communicate via a 
 
 ### Other projects
 
-I was primary (sole) backend developer on one public facing web application for the National Park Service, although the public facing side does not expose half of the bibliographic resource management functionality the system is designed to provide. See 
+#### National Park Service Integrated Resource Management Application (NPS IRMA)
+
+I was primary (sole) backend developer for a public facing web application for the National Park Service, although the public facing side does not expose half of the bibliographic resource management functionality the system is designed to provide. See 
 - https://irma.nps.gov/DataStore/ and in particular the `Quick Search` and `Advanced Search` interfaces. For example, so a quick search for `gray wolf` returns over 500 scientific related resources. Behind that is also the internal intake and managment of those resources using REST and MS Sql Server. You get a taste of the complexity by clicking through the `Advanced Search` fields.
 
 It was released for public use around 2012 and is still in use today. My particular source of pride is the ability to select an area on a map and have the search return resources related to that area, a fun mix of geospatial and relational queries as supported by Sql Server.
+
+#### Universal Well Site Solutions
+
+Unfortunately, I no longer have source code examples from my work with OPC and SCADA libraries in .Net from 2009. The idea was to poll (via radio) telemetry points from the proprietary RTU installed on each water pump for a given gas or oil site, store the data in Sql Server, and feed it to a web dashboard for real-time pump monitoring. I did the accumulated buffer read and data display in Win Forms while my fellow engineer did the actual PLC programming and command interface. I also lobbied to convert our software product into OPC compliant controls so they could be integrated into the customer's existing SCADA software. It was the most enjoyable coding experience I had, but short lived as the company was soon acquired by another.
