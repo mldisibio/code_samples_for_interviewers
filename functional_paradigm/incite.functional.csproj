@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <Version>8.0.5.0</Version>
+    <Authors>Michael DiSibio</Authors>
+    <Description>Basic components for the 'functional csharp' composition paradigms.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="docs\readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="contoso.utility.exceptionwrappers" Version="8.0.1" />
+  </ItemGroup>
+</Project>

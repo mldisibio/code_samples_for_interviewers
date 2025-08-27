@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>Michael DiSibio</Authors>
+    <Description>Independent assembly for connection configuration for the abstraction layer over Postgres via Npgsql with latest connection pooling.</Description>
+    <Version>9.0.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\contoso.ado\Internals\UtilExtensions.cs" Link="Internals\UtilExtensions.cs" />
+  </ItemGroup>
+
+</Project>

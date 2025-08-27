@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+    <Version>9.0.0.0</Version>
+    <Authors>Michael DiSibio</Authors>
+    <Description>I/O utilities using the Microsoft.Extensions.FileProvider abstractions for compatability with both disk and cloud storage.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.FileSystemGlobbing" Version="9.0.7" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+    <Version>9.0.0.0</Version>
+    <Authors>Michael DiSibio</Authors>
+    <Description>
+      An implementation of DynamicObject which does not throw a RuntimeBinderException when submitting a non-existent property name.
+      Also supports deserializing any json string to a Dictionary via ExpandoObject semantics.
+    </Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

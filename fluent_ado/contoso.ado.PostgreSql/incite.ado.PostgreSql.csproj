@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>Michael DiSibio</Authors>
+    <Description>Fluent data access abstraction layer over Postgres via Npgsql. Updated to dotnet 6.0 with compatibility with latest Npgsql and connection pooling.</Description>
+    <Version>9.0.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\contoso.ado\Internals\ParamCheck.cs" Link="Internals\ParamCheck.cs" />
+    <Compile Include="..\contoso.ado\Internals\UtilExtensions.cs" Link="Internals\UtilExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <!--
+    <PackageReference Include="Npgsql.Json.NET" Version="7.0.2" />
+    <PackageReference Include="Npgsql.NodaTime" Version="7.0.2" />
+    <PackageReference Include="System.Text.Json" Version="6.0.7" />
+    -->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\contoso.ado.PostgreSql.configuration\contoso.ado.PostgreSql.configuration.csproj" />
+    <ProjectReference Include="..\contoso.ado\contoso.ado.csproj" />
+  </ItemGroup>
+</Project>

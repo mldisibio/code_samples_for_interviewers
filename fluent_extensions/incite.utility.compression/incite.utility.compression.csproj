@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+    <Version>9.0.0.0</Version>
+    <Authors>Michael DiSibio</Authors>
+    <Description>Library specific to decompressing log files taking compression errors and corruption into account.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="contoso.functional.patterns.result" Version="8.0.0.13" />
+    <PackageReference Include="contoso.logging.sublog" Version="8.0.0.12" />
+    <InternalsVisibleTo Include="tests.compression" />
+  </ItemGroup>
+</Project>

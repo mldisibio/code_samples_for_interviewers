@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+    <Version>9.0.0.0</Version>
+    <Authors>Michael DiSibio</Authors>
+    <Description>High Performance data writer from Sqlite to Postgres.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="contoso.ado.PostgreSql.configuration" Version="9.0.0" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\contoso.sqlite.raw\contoso.sqlite.raw.csproj" />
+  </ItemGroup>
+</Project>

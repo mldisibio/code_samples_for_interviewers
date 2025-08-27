@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Authors>Michael DiSibio</Authors>
+    <Description>Wraps the C++ console app Bin2Csv for use in a C# app.</Description>
+    <Version>6.0.0.15</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <EmbedAllSources>true</EmbedAllSources>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="linux\Bin2Csv" />
+    <None Remove="win\Bin2Csv.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="linux\Bin2Csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="win\Bin2Csv.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="contoso.logfiles" Version="6.0.0.10" />
+    <PackageReference Include="contoso.logfiles.environment" Version="6.0.0.10" />
+    <PackageReference Include="contoso.logging" Version="6.0.1.15" />
+    <PackageReference Include="contoso.utility.fluentextensions" Version="6.0.1.32" />
+    <PackageReference Include="contoso.utility.iohelp" Version="6.0.1.32" />
+  </ItemGroup>
+
+</Project>
